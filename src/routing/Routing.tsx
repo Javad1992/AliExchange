@@ -40,7 +40,7 @@ const Routing = () => {
                                 <Route index element={<Home />}></Route>
                                 <Route path={"/settings"} element={<Settings />}></Route>
                             </Route>
-                            <Route path={"/contract"} element={<Contract />}></Route>
+                            <Route path={"/contract"} element={<Contract />}/>
                         </Routes>
                     </HashRouter>
                 {/* </BrowserRouter> */}
