@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/AliExchange/static/css/main.cb24ed6d.css",
-    "main.js": "/AliExchange/static/js/main.020a5fb3.js",
+    "main.js": "/AliExchange/static/js/main.6cbad262.js",
     "static/js/453.8922a09c.chunk.js": "/AliExchange/static/js/453.8922a09c.chunk.js",
     "service-worker.js": "/AliExchange/service-worker.js",
     "index.html": "/AliExchange/index.html",
     "static/media/getFetch.cjs": "/AliExchange/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "main.cb24ed6d.css.map": "/AliExchange/static/css/main.cb24ed6d.css.map",
-    "main.020a5fb3.js.map": "/AliExchange/static/js/main.020a5fb3.js.map",
+    "main.6cbad262.js.map": "/AliExchange/static/js/main.6cbad262.js.map",
     "453.8922a09c.chunk.js.map": "/AliExchange/static/js/453.8922a09c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb24ed6d.css",
-    "static/js/main.020a5fb3.js"
+    "static/js/main.6cbad262.js"
   ]
 }
