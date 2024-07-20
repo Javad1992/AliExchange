@@ -5,6 +5,7 @@ import { getStorageValue } from "../../../../utils/localstorage";
 import ExchangeCalculator from "./ExchangeCalculator";
 import ExchangeContract from "./ExchangeContract";
 import ExchangeStart from "./ExchangeStart";
+import SelectBankCard from "./SelectBankCard";
 import SelectWallet from "./SelectWallet";
 
 interface ExchangeModalProps {
@@ -42,6 +43,12 @@ const steps: Step[] = [
         id: 3,
         component: <SelectWallet/>,
         back: 2,
+        next: 4
+    },
+    {
+        id: 4,
+        component: <SelectBankCard/>,
+        back: 3,
         next: 4
     },
 ]

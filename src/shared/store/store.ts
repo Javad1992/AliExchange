@@ -9,6 +9,7 @@ export interface ThemeStore {
 export interface ExchangeStore {
   numberOfcoins: number
   walletAddress: string
+  bankCard: string
 }
 
 export const useThemeStore = create<ThemeStore>((set) => ({
@@ -22,5 +23,6 @@ export const useThemeStore = create<ThemeStore>((set) => ({
 
 export const useExchangeStore = create<ExchangeStore>((set) => ({
   numberOfcoins: 0,
-  walletAddress: ""
+  walletAddress: "",
+  bankCard: ""
 }))
