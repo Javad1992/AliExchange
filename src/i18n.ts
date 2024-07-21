@@ -16,7 +16,8 @@ const resources = {
             "Hamster": "Hamster",
             "Next": "next",
             "Back": "back",
-            "Cancel": "cancel"
+            "Cancel": "cancel",
+            "Confirm": "Confirm"
         }
     },
     fa: {
@@ -30,7 +31,8 @@ const resources = {
             "Hamster": "همستر",
             "Next": "مرحله بعد",
             "Back": "مرحله قبل",
-            "Cancel": "انصراف"
+            "Cancel": "انصراف",
+            "Confirm": "تایید"
         }
     }
 }
@@ -49,8 +51,9 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init(
 export default i18n;
 
 
-// 10:30 2:30
-// 15:06 16:16
-// 19:30 21:10
-// 21:40 22:30
-// 20:02 
+// 10:30 14:30 4
+// 15:06 16:16 1
+// 19:30 21:10 1:40
+// 21:30 22:30 1
+// 20:00 21:50 1:50
+// 22:00 

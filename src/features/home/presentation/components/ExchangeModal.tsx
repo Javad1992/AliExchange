@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { getStorageValue } from "../../../../utils/localstorage";
 import ExchangeCalculator from "./ExchangeCalculator";
 import ExchangeContract from "./ExchangeContract";
+import ExchangeDetailsAndContractConfirmation from "./ExchangeDetailsAndContractConfirmation";
 import ExchangeStart from "./ExchangeStart";
 import SelectBankCard from "./SelectBankCard";
 import SelectWallet from "./SelectWallet";
@@ -49,7 +50,13 @@ const steps: Step[] = [
         id: 4,
         component: <SelectBankCard/>,
         back: 3,
-        next: 4
+        next: 5
+    },
+    {
+        id: 5,
+        component: <ExchangeDetailsAndContractConfirmation/>,
+        back: 4,
+        next: 5
     },
 ]
 
@@ -63,10 +70,10 @@ const ExchangeModal = ({ open, onClose }: ExchangeModalProps) => {
             <Box sx={{ position: "relative", width: "100%", height: "100%", maxHeight: "100vh", padding: "0", borderRadius: "0" }}>
                 <Box sx={{ position: "absolute", display: "flex", flexDirection: "row", justifyContent: "space-between", width: "100%", bottom: "1rem", left: "0", right: "0", padding: "1rem", zIndex: "10" }}>
                     <Button variant="contained" color="error" onClick={() => step.id === 0 ? onClose() : setStep(steps[step.back])}>
-                        {step.id === 0 ? t("Cnacel") : t("Back")}
+                        {step.id === 0 ? t("Cancel") : t("Back")}
                     </Button>
                     <Button variant="contained" color="success" onClick={() => setStep(steps[step.next])}>
-                        {t("Next")}
+                        {step.id === 5 ? t("Confirm") : t("Next")}
                     </Button>
                 </Box>
                 <Box sx={{ position: "absolute", bottom: "0", left: "0", right: "0", top: "0", backgroundColor: getStorageValue("theme") === "light" ? "#FAFAFA" : "#03030" }}>
